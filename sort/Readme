@@ -1,0 +1,24 @@
+#stability standard of sort olgorithm
+1) whether the two same value's sequence was changed. (is: unstability  not: stability) 
+2) whether change the sequence of values in distance. (is: unstability  not: stability)
+stable sort olgorithm is as following:
+1) diretly insert sort
+   * olgorethm complexity is O(N*N)
+   iteration 1: select the no.2's value as key .(no.1's value is consider as a order sequence)
+   iteration 2: for need to change the index with the next value, so 
+                need to traverse the list from right to left .
+2) bubble sort
+   * one of change sort
+   * olgorethm complexity is O(N*N)
+3) 
+
+
+unstable sort olgorithm is as following:
+1) shell sort
+2) quick sort
+3) directly select sort
+  * olgrethm complexity is O(N*N)
+  * select the smallest value to put the first.
+  * for need to refresh the smallest value, so should set the value of smallest in the iteration 2 .
+  * unstable's reason: change the location by distance, so maybe destroy the ralatively location fo values.
+4) heap sort
