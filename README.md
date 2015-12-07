@@ -1,2 +1,2 @@
 # interview
-sort and link algorithm
+firstly sort and link algorithm will be added.
