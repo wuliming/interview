@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+static int num = 0;
 void print(int *list, int len)
 {
    int i=0;
    for(i; i<len; i++)
    {
-     printf("%d", list[i]);
+     printf("%d ", list[i]);
    }
+   num++;
    printf("\n");
 }
 
@@ -19,7 +22,7 @@ void directly_insert(int *list, int len)
     int key = list[i];
     for(j=i-1; j>=0; j--)
     {
-       if(list[j] > key)
+       if(list[j] > list[j+1])
        {
           list[j+1]=list[j];
           list[j] = key;
@@ -33,4 +36,5 @@ int main()
   int list[5]={5,4,3,2,1};
   int len = 5;
   directly_insert(list, len);
+  printf("the sort times is : %d\n", num);
 }
